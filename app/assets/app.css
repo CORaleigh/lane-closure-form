@@ -21,6 +21,7 @@ html, body {
   width: 36px;
 }
 
+
 md-toolbar h1 {
   margin: auto;
 }
@@ -140,7 +141,7 @@ label {
 .personnelContent.ng-enter {
     max-height: 0;
     opacity: 0;
-    transition: max-height 500ms ease-out, opacity 300ms ease-out;    
+    transition: max-height 500ms ease-out, opacity 300ms ease-out;
     overflow: hidden;
 }
 
@@ -154,7 +155,7 @@ label {
 .personnelContent.ng-leave {
     max-height: 500px;
     opacity: 1;
-    transition: max-height 500ms ease-in, opacity 300ms ease-in;  
+    transition: max-height 500ms ease-in, opacity 300ms ease-in;
     overflow: hidden;
 }
 .personnelContent.ng-leave.ng-leave-active {
