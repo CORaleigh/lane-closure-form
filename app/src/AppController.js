@@ -178,13 +178,14 @@ function AppController($http, $scope, $httpParamSerializerJQLike, $mdDialog, $fi
                 });
 
                 featureLayer = new FeatureLayer("https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Emergency_Road_Closures/FeatureServer/0");
-                featureLayer.visible = false;
+
                 map.add(featureLayer);
 
 
                 featureLayer.on('layerview-create', function (event) {
                   self.fields = event.layerView.layer.fields;
-
+                  $scope.$apply();
+                  featureLayer.visible = false;
                 });
                 polyline = new Polyline();
                 polyline.spatialReference = { wkid: 3857 }
