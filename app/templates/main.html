@@ -1,8 +1,8 @@
-<div ng-controller="AppController as app" ng-init="app.showSplash($event);app.createMap()">
+<div ng-controller="AppController as app" ng-init="app.createMap()">
     <md-content id="content">
         <div ng-cloak>
             <md-content>
-                <p>This notification must be completed for Maintenance Work or if an Emergency arises&nbsp; It is not allowed for any planned installation or construction work other than a City of Raleigh Installation project.</p>              
+                <p>This notification must be completed for Maintenance Work or if an Emergency arises&nbsp; It is not allowed for any planned installation or construction work other than a City of Raleigh Installation project.</p>
                 <form novalidate name="lcForm" ng-submit="app.submitForm()">
                     <div ng-repeat="field in app.fields">
                       <md-input-container class="md-block" ng-if="!field.domain && field.type === 'string' && field.alias != 'From' && field.alias != 'To'">
