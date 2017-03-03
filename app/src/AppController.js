@@ -177,7 +177,7 @@ function AppController($http, $scope, $httpParamSerializerJQLike, $mdDialog, $fi
                   index: 2
                 });
 
-                featureLayer = new FeatureLayer("http://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Emergency_Road_Closures/FeatureServer/0");
+                featureLayer = new FeatureLayer("https://services.arcgis.com/v400IkDOw1ad7Yad/arcgis/rest/services/Emergency_Road_Closures/FeatureServer/0");
                 featureLayer.visible = false;
                 map.add(featureLayer);
 
